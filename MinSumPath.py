@@ -52,7 +52,8 @@ class Solution(object):
         
         return dp[-1][-1]
     
-    # The optimized DP. TimeL O(m.n), Space: O(1)
+    # The optimized DP. 
+    # Time: O(m.n), Space: O(1)
     def minPathSum(self, grid):
         if not grid: 
             return 0
@@ -76,10 +77,10 @@ grid = [[1,3,1],
         [1,5,1],
         [4,2,1]]
 
-'''
+
 grid = [[1,2,3],
         [4,5,6]]
-'''
+
 
 grid = [[1,2],
         [1,1]]
