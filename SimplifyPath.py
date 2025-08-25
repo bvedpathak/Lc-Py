@@ -17,6 +17,7 @@ The path must not end with a slash '/', unless it is the root directory.
 The path must not have any single or double periods ('.' and '..') used to denote current 
 or parent directories.
 Return the simplified canonical path.
+Time: O(n2) where n is number of words
 '''
 class Solution(object):
     def simplifyPath(self, path):
