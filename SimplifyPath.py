@@ -23,8 +23,10 @@ class Solution(object):
     def simplifyPath(self, path):
         stack = list()
         curr = ""
+        # Go thru all the tokens in the path
         for literal in path.split('/'):
             if literal != "":
+                # Pop back (in other words go back one up directory up)
                 if literal == "..":
                     if stack:
                         if curr[-1] == '/':
@@ -42,7 +44,7 @@ class Solution(object):
                     curr = '/'
                 else: 
                     curr += '/' if curr[-1] != '/' else ''
-
+        # Remove the last '/' unless it is the very first character
         return curr[:-1] if len(curr) > 1 and curr[-1] == '/' else curr
 
 path = "./home//foo/../.."
