@@ -16,5 +16,6 @@ class Solution(object):
             
         return(dp[n])
         
-n = 4
+n = 7
+
 print(f"\nDistinct Ways to climb to the top {n} steps is: {Solution().climbStairs(n)}\n")
