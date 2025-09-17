@@ -21,4 +21,4 @@ class Solution(object):
 
 root = TreeNode(2, TreeNode(1), TreeNode(3))
 
-print(Solution().inorderTraversal(root))
+print(f"{Solution().inorderTraversal(root)}")
